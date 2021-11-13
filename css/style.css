@@ -23,7 +23,7 @@ body {
 
 .top-menu {
   height: 45px;
-  border-bottom: 1px solid var(--light-black);
+  border-bottom: 1px solid var(--just-grey);
   font-size: small;
 }
 
@@ -65,7 +65,7 @@ body {
 .main-menu {
   display: flex;
   height: 140px;
-  border-bottom: solid;
+
   align-items: center;
   justify-content: space-between;
   margin-left: 10%;
@@ -77,9 +77,16 @@ body {
   height: 70px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  text-decoration: none;
+  color: black;
+}
+
 .navbar a {
   color: var(--just-black);
-  margin: 1rem;
   text-decoration: none;
 }
 
