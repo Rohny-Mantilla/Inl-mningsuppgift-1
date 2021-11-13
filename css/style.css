@@ -1,6 +1,5 @@
 :root {
   /* colors */
-  --just-white: #fff;
   --off-white: #f7f7f7;
   --primary-green: #25e6c8;
   --primary-blue: #2baaec;
@@ -97,16 +96,16 @@ body {
   margin-top: 34px;
 }
 
-.showcase-container {
+.showcase_container {
 }
 
-.showcase-container h1 {
+.showcase_container h1 {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
   font-weight: 400;
 }
 
-.showcase-container p {
+.showcase_container p {
   margin: 25px 0;
   color: var(--light-black);
   font-size: small;
@@ -121,4 +120,37 @@ body {
   background-color: var(--primary-green);
   border: none;
   color: var(--just-white);
+}
+
+/* About-Us */
+.aboutUs {
+  height: 575px;
+  width: 100%;
+}
+
+.aboutUs_container {
+  height: 500px;
+  width: 1050px;
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutUs_content {
+  text-align: left;
+}
+
+.aboutUs_title {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 3px solid var(--primary-green);
+  padding-bottom: 10px;
+}
+
+.aboutUs_title span {
+  color: var(--primary-blue);
 }
