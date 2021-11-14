@@ -131,13 +131,13 @@ body {
 
 /* About-Us */
 .aboutUs {
-  height: 575px;
+  height: 500px;
   width: 100%;
 }
 
 .aboutUs_container {
-  height: 500px;
-  width: 1050px;
+  max-height: 500px;
+  max-width: 1050px;
   margin-top: 75px;
   display: flex;
   align-items: center;
@@ -185,4 +185,37 @@ body {
   font-family: "Roboto Slab", serif;
   color: var(--just-black);
   font-size: smaller;
+}
+
+/* service */
+
+.service {
+  background-color: var(--off-white);
+}
+
+.service_container {
+  width: 80%;
+  margin: auto;
+}
+
+.grid_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.box {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: var(--primary-green);
+  border-radius: 50%;
 }
