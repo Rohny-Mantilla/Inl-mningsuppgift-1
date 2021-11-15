@@ -7,6 +7,8 @@
   --just-grey: #bfbfbf;
   --just-black: #363636;
   --light-black: #626262;
+  /* fonts */
+  --roboto-slab: "Roboto Slab", serif;
 }
 
 * {
@@ -107,7 +109,7 @@ body {
 }
 
 .showcase_container h1 {
-  font-family: "Roboto Slab", serif;
+  font-family: var(--roboto-slab);
   font-size: 3rem;
   font-weight: 400;
 }
@@ -151,7 +153,7 @@ body {
 }
 
 .aboutUs_title {
-  font-family: "Roboto Slab", serif;
+  font-family: var(--roboto-slab);
   font-size: 1.5rem;
   font-weight: 500;
   border-bottom: 3px solid var(--primary-green);
@@ -182,7 +184,7 @@ body {
 }
 
 .aboutUs_info p {
-  font-family: "Roboto Slab", serif;
+  font-family: var(--roboto-slab);
   color: var(--just-black);
   font-size: smaller;
 }
@@ -196,16 +198,37 @@ body {
 .service_container {
   width: 80%;
   margin: auto;
+
+  margin-bottom: 110px;
+}
+
+.service_title {
+  width: 340px;
+  margin: auto;
+  padding-top: 65px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid var(--primary-green);
+}
+
+.service_title h2 {
+  font-family: var(--roboto-slab);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 .grid_section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .box {
   background-color: white;
+  /* height: 330px;
+  width: 340px; */
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -218,4 +241,29 @@ body {
   height: 90px;
   background-color: var(--primary-green);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.circle svg {
+  height: 45px;
+  width: 45px;
+}
+
+.box h3 {
+  font-family: var(--roboto-slab);
+  font-size: lager;
+  font-weight: 400;
+  color: var(--just-black);
+  margin-bottom: 25px;
+}
+
+.box p {
+  color: var(--light-black);
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 55px;
 }
