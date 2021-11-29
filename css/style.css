@@ -175,7 +175,7 @@ body {
 .aboutUs_info {
   display: flex;
   justify-content: space-between;
-  width: 450px;
+  max-width: 450px;
 }
 
 .aboutUs_info h2 {
@@ -203,7 +203,7 @@ body {
 }
 
 .service_title {
-  width: 340px;
+  max-width: 340px;
   margin: auto;
   padding-top: 65px;
   padding-bottom: 20px;
@@ -381,7 +381,16 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .appointment-text {
+  .appointment-text p {
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutUs_content {
+    width: 320px;
+  }
+  .aboutUs_title {
+    font-size: 1rem;
   }
 }
