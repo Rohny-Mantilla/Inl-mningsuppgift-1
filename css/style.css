@@ -80,7 +80,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  width: 91vh;
   text-decoration: none;
   color: black;
 }
@@ -236,6 +236,16 @@ body {
   text-align: center;
 }
 
+.box:hover {
+  box-shadow: 2px 2px 16px 2px rgb(89 73 30 / 16%);
+}
+
+.box:hover .circle {
+  background-color: var(--primary-blue);
+  box-shadow: 0 0 1px 10px hsla(201, 84%, 55%, 0.2);
+  transition: all 0.3s ease-out;
+}
+
 .circle {
   width: 90px;
   height: 90px;
@@ -290,6 +300,7 @@ body {
   font-size: 1.5rem;
   text-align: left;
   letter-spacing: 1px;
+  margin-right: 10px;
 }
 
 .appointment_btn button {
@@ -322,4 +333,55 @@ body {
 .footer p {
   color: hsla(200, 100%, 98%, 0.6);
   font-size: 16px;
+}
+
+@media (max-width: 1330px) {
+  .showcase_container {
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .placehold {
+    display: none;
+  }
+
+  .aboutUs_container {
+    justify-content: center;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .aboutUs_content {
+    text-align: center;
+  }
+
+  .grid_section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 835px) {
+  .top-menu {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid_section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .appointment_container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .appointment-text {
+    text-align: center;
+  }
 }
