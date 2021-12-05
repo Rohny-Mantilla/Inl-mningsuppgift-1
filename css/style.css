@@ -72,6 +72,10 @@ body {
   margin: 0 12% 0 15%;
 }
 
+.show {
+  display: none;
+}
+
 .logo img {
   width: 195px;
   height: 70px;
@@ -80,7 +84,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 91vh;
+  width: 378px;
   text-decoration: none;
   color: black;
 }
@@ -360,6 +364,17 @@ body {
   .grid_section {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .main-menu {
+    margin: 0 10%;
+  }
+
+  .show {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-blue);
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 835px) {
@@ -369,6 +384,10 @@ body {
 
   .navbar {
     display: none;
+  }
+
+  .show {
+    display: flex;
   }
 }
 
